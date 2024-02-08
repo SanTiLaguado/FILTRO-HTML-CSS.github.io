@@ -5,12 +5,14 @@
     margin: 0px;
     font-family: 'League Spartan', sans-serif;;
     scroll-behavior: smooth;
+    color: black;
 }
 body{
     padding-left: 10px;
     display: flex;
     align-items: center;
-
+    background-color:aliceblue;
+    margin-left: 20px;
 }
 
 section{
@@ -26,34 +28,71 @@ section h1{
 }
 
 #header{
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 150px;
   text-align: center;
   padding-top: 10px;
   font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#header img{
+    max-width: 170px;
+    height: auto;
+}
+
+#header img:hover{
+    background-color: rgb(228, 235, 241);
+    box-shadow: 0px 0px 4px rosybrown;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    transition: box-shadow 0.1s ease;
 }
 .main-menu{
-  padding-top: 2vh;
+  padding-top: 3vh;
   display: flex;
   flex-direction: column;
   height: 500px;
   width: 180px;
 }
 
+
 .main-menu a{
-  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
+.main-menu a:hover{
+    background-color: rgb(228, 235, 241);
+    box-shadow: 0px 0px 4px rosybrown;
+    transition: background-color 0.5s ease;
+    transition: box-shadow 0.2s ease;
+}
+
+.main-menu a:active{
+    box-shadow: none;
+
+}
 .main-menu .carrito{
   margin-top: 50px;
 }
-
+h1{
+    display: flex;
+    margin-left: 20px;
+}
 #main-page{
-  width: 88vw;
+  width: 84.5vw;
   height: 90vh;
-  border: 1px solid green;
+  background-color: white;
   scroll-behavior: auto;
   overflow-y:scroll;
+  margin-top: 5vh;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rosybrown;
+  margin-right: 10px;
+
 }
 
 .productos{
@@ -85,14 +124,143 @@ section h1{
     max-width: 196;
 }
 
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .producto-info a{
-    font-size: 10px;
-    color: black;
-    transition: all 300ms;
+    text-decoration: none;
+}
+
+.agregar{
+    text-align: center;
+    background-color: #cccccc;
+    padding: 2px;
+    box-shadow: 0px 0px 2px rosybrown;
+
+}
+
+.agregar a{
+text-decoration: none;
+color: #1f1f1f;
+}
+
+.agregar:hover{
+    background-color: #000000;
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: 0px 0px 2px rosybrown;
+}
+
+.agregar a:hover{
+color: aliceblue;
 }
 
 #Todos{
     height: fit-content;
     padding-bottom: 20px;
 }
+
+#Carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: .5rem;
+    padding-right: 1.5rem;
+    width: 75vw;
+    box-shadow: 0px 0px 2px rosybrown
+
+}
+
+.carrito-producto-imagen {
+    width: 4rem;
+}
+
+.carrito-producto small {
+    font-size: .75rem;
+}
+
+.carrito-cantidad p{
+    text-align: center;
+}
+
+.carrito-producto-eliminar {
+    border: 0;
+    background-color: aliceblue;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.carrito-producto-eliminar:hover{
+    text-decoration: line-through;
+
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carrito-total {
+    display: flex;
+    align-items: center;
+    background-color: #cccccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    gap: 1rem;
+}
+
+.carrito-comprar {
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrito-comprar:hover{
+    background-color: rgb(238, 238, 238) ;
+    transition: background-color 0.8s ease;
+    transition: box-shadow 0.2s ease;
+}
+
+footer{
+    display: flex;
+    margin-right: 8px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
 
