@@ -265,6 +265,10 @@ footer{
     font-size: 15px;
 }
 
+
+/* CONFIGURACIONES RESPONSIVE */
+
+
 @media (min-width: 320px) and (max-width: 573px) {
 
 body{
